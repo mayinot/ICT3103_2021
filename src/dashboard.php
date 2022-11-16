@@ -1,5 +1,21 @@
 <?php 
 	session_start();
+	class Pet {
+
+		private $pet;
+		
+		public function getPet() {
+			return $this->pet;
+		}
+		
+		public function setPet($name) {
+			$this->pet = $name;
+		}
+		
+		public function changeName() {
+			$this->setPet($this->getPet() = "Postman Cat");
+		}
+	}
 		
 	if(!isset($_SESSION['user_id']))
 	{
@@ -14,6 +30,7 @@
 		{
 			$contactemail = trim($_POST['contactemail']);
 			$petname = trim($_POST['petname']);
+			
 
 			 //sanitise string
 			//$petname = filter_var($petname, FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_LOW | FILTER_FLAG_STRIP_HIGH | FILTER_FLAG_STRIP_BACKTICK);
@@ -26,6 +43,7 @@
 					$resultMsg = "Postman cat is requested.".$petname;
 					
 				}else{
+					unset($errorMsg);
 					$resultMsg = "No pet allow named: " .$petname; 
 				}
 			}
