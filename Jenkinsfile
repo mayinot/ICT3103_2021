@@ -4,7 +4,7 @@ pipeline {
 		stage('Unit test'){
 			agent {
 				docker {
-					image 'composer:latest'
+					image 'composer:2.4'
 				}
 			}
 			stages {
@@ -15,7 +15,7 @@ pipeline {
 				}
 				stage('Test') {
 					steps {
-						sh './vendor/bin/phpunit --log-junit logs/unitreport.xml -c tests/phpunit.xml tests'
+						sh './vendor/bin/phpunit --log-junit logs/unitreport.xml -c test/phpunit.xml test'
 					}
 				}
 			}
