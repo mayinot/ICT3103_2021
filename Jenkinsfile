@@ -44,11 +44,6 @@ pipeline {
 		stage('SonarQube'){
 			agent any 
 			stages {
-				stage ('Checkout') { 
-					steps {
-						git branch:'master', url: 'https://github.com/OWASP/Vulnerable-Web-Application.git'
-					} 
-				}
 				stage('Code Quality Check via SonarQube') { 
 					steps {
 						script {
