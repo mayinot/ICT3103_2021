@@ -22,10 +22,11 @@
 			{	
 				if($petname == "postmancat")
 				{
-					$resultMsg = "Postman cat is requested.";
+					unset($errorMsg);
+					$resultMsg = "Postman cat is requested.".$petname;
 					
 				}else{
-					$nopetMsg = "No pet allow named: " .$petname; 
+					$resultMsg = "No pet allow named: " .$petname; 
 				}
 			}
 			$errorMsg = "Submit failed";
@@ -56,22 +57,12 @@
 			
 			if(isset($resultMsg))
 			{
-				unset($errorMsg);
 				echo "<div class='success-msg'>";
-				echo "You have successfully submitted an adoption request. ";
 				echo $resultMsg;
 				echo "</div>";
 				unset($resultMsg);
 			}
-			if(isset($nopetMsg))
-			{
-				unset($errorMsg);
-				echo "<div class='success-msg'>";
-				echo "You have successfully submitted an adoption request. ";
-				echo $resultMsg;
-				echo "</div>";
-				unset($nopetMsg);
-			}
+			
 		?>
 		<form action="<?php echo $_SERVER['PHP_SELF']?>" method="post">
 			<div class="field-container">
