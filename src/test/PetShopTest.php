@@ -1,8 +1,8 @@
 <?php
 use PHPUnit\Framework\TestCase;
-require 'src/dashboard.php';
+require 'src/PetShop.php';
 
-class dashboardTest extends TestCase {
+class PetShopTest extends TestCase {
 
 	public $petInstance;
 	
