@@ -18,9 +18,9 @@
 			 //sanitise string
 			//$petname = filter_var($petname, FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_LOW | FILTER_FLAG_STRIP_HIGH | FILTER_FLAG_STRIP_BACKTICK);
 			
-			if($email == "user@example.com")
+			if($contactemail == "user@example.com")
 			{	
-				if($petname == "postman cat")
+				if($petname == "postmancat")
 				{
 					$resultMsg = "Postman cat is requested.";
 					
