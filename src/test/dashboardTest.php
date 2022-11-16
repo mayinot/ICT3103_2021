@@ -2,7 +2,7 @@
 use PHPUnit\Framework\TestCase;
 require 'src/dashboard.php';
 
-class GumballMachineTest extends TestCase {
+class dashboardTest extends TestCase {
 
 	public $petInstance;
 	
