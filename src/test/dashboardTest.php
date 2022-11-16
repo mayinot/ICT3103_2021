@@ -18,5 +18,7 @@ class dashboardTest extends TestCase {
 		$this->petInstance->changeName();
 		
 		$this->assertEquals(99, $this->petInstance->getPet());
+        $this->petInstance->changeName();
+        $this->assertEquals(98, $this->petInstance->getPet());
 	}
 }
