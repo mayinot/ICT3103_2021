@@ -28,7 +28,7 @@
 					exit;
 					
 				}else{
-					$resultMsg = $petname "is requested.";
+					//$resultMsg = $petname 
 				}
 			}
 			$errorMsg = "Submit failed";
