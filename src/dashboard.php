@@ -8,12 +8,12 @@
 			return $this->pet;
 		}
 		
-		public function setPet($name) {
-			$this->pet = $name;
+		public function setPet($val) {
+			$this->pet = $val;
 		}
 		
 		public function changeName() {
-			$this->setPet($this->getPet() = "Postman Cat");
+			$this->setPet($this->getPet()-1);
 		}
 	}
 		

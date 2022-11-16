@@ -13,10 +13,10 @@ class GumballMachineTest extends TestCase {
 	
 	public function testIfWheelWorks() {
 		
-		$this->petInstance->setPet("Lovely");
+		$this->petInstance->setPet(100);
 		
 		$this->petInstance->changeName();
 		
-		$this->assertEquals("Postman Cat", $this->petInstance->getPet());
+		$this->assertEquals(99, $this->petInstance->getPet());
 	}
 }
