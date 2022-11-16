@@ -24,11 +24,9 @@
 				{
 					$resultMsg = "Postman cat is requested.";
 					unset($errorMsg);
-					header('location:dashboard.php');
-					exit;
 					
 				}else{
-					//$resultMsg = $petname 
+					$resultMsg = "No pet allow named: " .$petname 
 				}
 			}
 			$errorMsg = "Submit failed";
