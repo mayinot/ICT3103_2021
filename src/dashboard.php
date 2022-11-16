@@ -23,7 +23,6 @@
 				if($petname == "postman cat")
 				{
 					$resultMsg = "Postman cat is requested.";
-					unset($errorMsg);
 					
 				}else{
 					$resultMsg = "No pet allow named: " .$petname; 
