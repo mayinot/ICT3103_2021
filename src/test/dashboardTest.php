@@ -1,6 +1,6 @@
 <?php
 use PHPUnit\Framework\TestCase;
-require 'dashboard.php';
+require 'src/dashboard.php';
 
 class GumballMachineTest extends TestCase {
 
