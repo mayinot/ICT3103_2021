@@ -26,7 +26,7 @@
 					unset($errorMsg);
 					
 				}else{
-					$resultMsg = "No pet allow named: " .$petname 
+					$resultMsg = "No pet allow named: " .$petname; 
 				}
 			}
 			$errorMsg = "Submit failed";
