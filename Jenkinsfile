@@ -15,7 +15,7 @@ pipeline {
 				}
 				stage('Test') {
 					steps { 
-						sh './vendor/bin/phpunit --log-junit src/logs/unitreport.xml -c src/test/phpunit.xml src/test'
+						sh './vendor/bin/phpunit --log-junit logs/unitreport.xml -c src/test/phpunit.xml src/test'
 					}
 				}
 			}
